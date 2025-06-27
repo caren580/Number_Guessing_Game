@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Press Start 2P", system-ui;
+  background-color: white;
+ 
+}
+
+.num-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.num-game-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.num-game-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: .7rem 1.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: #222;
+}
+
+.num-game-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.num-game-trials{
+    font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.num-game-feedback {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+input[type="number"] {
+  padding: .8rem 1.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 6px;
+  width: 12rem;
+  margin: 1rem 0;
+  font-family: inherit;
+}
+
+input:read-only {
+  background-color: #f0f0f0;
+}
