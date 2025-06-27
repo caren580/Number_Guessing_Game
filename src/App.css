@@ -1,12 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "Press Start 2P", system-ui;
   background-color: white;
- 
 }
 
 .num-game-container {
@@ -31,7 +30,7 @@ body {
 }
 
 button {
-  padding: .7rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   font-size: 1rem;
   font-family: inherit;
   font-weight: bold;
@@ -42,7 +41,6 @@ button {
   cursor: pointer;
   border-radius: 4px;
   margin-top: 1rem;
-  transition: background 0.3s;
 }
 
 button:disabled {
@@ -60,8 +58,8 @@ button:hover:enabled {
   align-items: center;
 }
 
-.num-game-trials{
-    font-size: 1.5rem;
+.num-game-trials {
+  font-size: 1.5rem;
   margin: 1rem 0;
 }
 
@@ -71,7 +69,7 @@ button:hover:enabled {
 }
 
 input[type="number"] {
-  padding: .8rem 1.2rem;
+  padding: 0.8rem 1.2rem;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;

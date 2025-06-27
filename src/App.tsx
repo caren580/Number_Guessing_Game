@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import './App.css';
+import "./App.css";
 
 interface GameState {
   newGameBtnDisabled: boolean;
@@ -92,9 +92,7 @@ const Game: React.FC = () => {
   return (
     <div className="num-game-container">
       <header className="num-game-header">
-        <h2 className="num-game-title">
-          GUESS A NUMBER BETWEEN 0 AND 100
-        </h2>
+        <h2 className="num-game-title">GUESS A NUMBER BETWEEN 0 AND 100</h2>
         <button
           disabled={state.newGameBtnDisabled}
           onClick={() => dispatch({ type: "New_Game" })}
@@ -110,9 +108,7 @@ const Game: React.FC = () => {
           dispatch({ type: "Player_Guess", payload: state.playerGuess });
         }}
       >
-        <h2 className="num-game-trials">
-          {state.numTrials} TRIALS REMAINING
-        </h2>
+        <h2 className="num-game-trials">{state.numTrials} TRIALS REMAINING</h2>
 
         <input
           type="number"
