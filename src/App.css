@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Press Start 2P", system-ui;
-  background-color: white;
+  background-color:  #e3f2fd;
 }
 
 .num-game-container {
@@ -27,6 +27,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  color:  #1976d2; 
 }
 
 button {
@@ -35,8 +36,8 @@ button {
   font-family: inherit;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: black;
-  color: white;
+  background-color: #1abc9c;
+  color: #fff;
   border: none;
   cursor: pointer;
   border-radius: 4px;
@@ -47,11 +48,6 @@ button:disabled {
   background-color: #555;
   cursor: not-allowed;
 }
-
-button:hover:enabled {
-  background-color: #222;
-}
-
 .num-game-form {
   display: flex;
   flex-direction: column;
@@ -78,8 +74,10 @@ input[type="number"] {
   width: 12rem;
   margin: 1rem 0;
   font-family: inherit;
+  background-color: #ffffff;
+  color: #2c3e50;
 }
 
 input:read-only {
-  background-color: #f0f0f0;
+  background-color:#dcdcdc;
 }
